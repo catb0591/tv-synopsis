@@ -1,0 +1,14 @@
+.body{
+background-color: aqua;
+}
+
+.seasonHeader{
+text-align: center;
+}
+
+.table{
+margin: 0 auto;
+border-collapse: collapse;
+}
+
+td {border: 1px solid white;}

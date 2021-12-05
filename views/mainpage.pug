@@ -4,6 +4,20 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body 
-    h1 Hello
+        link(rel='stylesheet', href='mainpage.css')
+        
+    body(class='body') 
+    h1= shows.title
+        h2 Developed By
+            p  
+            for developer in shows.developedBy
+                    li= developer
+        h2 Starring
+            p 
+            for actor in shows.starring 
+                li= actor
+        h2 Seasons
+            p
+            for season in shows.seasons
+                li
+                    a(href=`/season/${season.number}`)=` Season ${season.number}`

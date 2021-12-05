@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='seasonpage.css')
+        
+    body 
+    h1= 'Kim\'s Convenience'
+    h2(class='seasonHeader')= `Season ${season.number}`
+        table(class='table') 
+        for episode in season.episodes
+            tr
+                td(class='number')= episode.number
+                td(class='title')= episode.title
+                td(class='director')= episode.director
+            tr
+                td(class='synopsis')= episode.synopsis 

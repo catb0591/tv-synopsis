@@ -1,0 +1,12 @@
+.body{
+background-color: blue;
+}
+
+h2{
+    font: bold;
+    font-style: italic;
+}
+
+li{
+    font: 10px;
+}
