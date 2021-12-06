@@ -4,9 +4,9 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel='stylesheet', href='mainpage.css')
+        link(rel='stylesheet', href='/stylesheet/mainpage.css')
         
-    body(class='body') 
+    body(class= 'body')  
     h1= shows.title
         h2 Developed By
             p  
@@ -20,4 +20,4 @@ html(lang="en")
             p
             for season in shows.seasons
                 li
-                    a(href=`/season/${season.number}`)=` Season ${season.number}`
+                    a(href=`/season/${season.number}`)(class= 'links')=` Season ${season.number}`

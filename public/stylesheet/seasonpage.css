@@ -1,0 +1,21 @@
+.firstRow{
+    background-color: rgb(55, 133, 235);
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font: bold;
+    text-align: center;
+}
+
+.table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 92%;
+}
+
+td {
+    border: 2px solid black;
+    margin: 0 auto;
+}
