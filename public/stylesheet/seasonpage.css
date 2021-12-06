@@ -2,20 +2,36 @@
     background-color: rgb(55, 133, 235);
     text-align: center;
     color: white;
+    font-weight: bolder;
+    font-size: large;
 }
 
 h2{
-    font: bold;
-    text-align: center;
+    font-weight: 1000;
+    margin-left: 550px;
 }
 
 .table{
-    margin: 0 auto;
+    margin: 10px 850px 10px 100px;
     border-collapse: collapse;
-    width: 92%;
 }
 
 td {
     border: 2px solid black;
-    margin: 0 auto;
+}
+
+.epnumber{
+    text-align: center;
+}
+
+.eptitle{
+    padding: 5px 20px;
+}
+
+.epdirector{
+    padding-left: 20px;
+}
+
+.synopsis{
+    padding: 5px 20px 5px 10px;
 }
