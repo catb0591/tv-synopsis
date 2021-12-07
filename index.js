@@ -13,23 +13,11 @@ app.get('/', (request, response) => {
     response.render('mainpage', { shows })
 })
 
-app.get('/season/1', (request, response) => {
-    const season = shows.seasons[0]
-    response.render('seasonpage', { season })
-})
-
-app.get('/season/2', (request, response) => {
-    const season = shows.seasons[1]
-    response.render('seasonpage', { season })
-})
-
-app.get('/season/3', (request, response) => {
-    const season = shows.seasons[2]
-    response.render('seasonpage', { season })
-})
-
-app.get('/season/4', (request, response) => {
-    const season = shows.seasons[3]
+app.get('/season/:num', (request, response) => {
+    const {num} = request.params
+    const season = shows.seasons.find ((show) => {
+        return show.number === Number(num)
+    })
     response.render('seasonpage', { season })
 })
 
