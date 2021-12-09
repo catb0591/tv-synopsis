@@ -1,5 +1,4 @@
 /* eslint-disable padding-line-between-statements */
-const { request, response } = require('express')
 const express = require('express')
 const app = express()
 
@@ -18,7 +17,7 @@ app.get('/season/:num', (request, response) => {
     const season = shows.seasons.find ((show) => {
         return show.number === Number(num)
     })
-    response.render('seasonpage', { season })
+    response.render('seasonpage', { season, title: shows.title })
 })
 
 app.all('*', (request, response) => {

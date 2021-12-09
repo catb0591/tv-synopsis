@@ -7,11 +7,11 @@ html(lang="en")
         link(rel='stylesheet', href='/stylesheet/seasonpage.css')
         
     body(class='body')
-        h1= 'Kim\'s Convenience'
+        h1= title 
         h2= `Season ${season.number}`
         table(class='table') 
             tr(class='firstRow') 
-                td(class='no.')= 'No.'
+                td(class='no')= 'No.'
                 td(class='title')= 'Title'
                 td(class='director')= 'Director'
             for episode in season.episodes
