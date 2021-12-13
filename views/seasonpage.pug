@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/stylesheet/seasonpage.css')
+        
+    body(class='body')
+        h1= title 
+        h2= `Season ${season.number}`
+        table(class='table') 
+            tr(class='firstRow') 
+                td(class='no')= 'No.'
+                td(class='title')= 'Title'
+                td(class='director')= 'Director'
+            for episode in season.episodes
+                tr
+                    td(class='epnumber')= episode.number
+                    td(class='eptitle')= episode.title
+                    td(class='epdirector')= episode.director
+                tr
+                    td(class='synopsis' colspan='3')= episode.synopsis 
